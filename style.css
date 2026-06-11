@@ -10,31 +10,12 @@ body {
     padding: 40px;
 }
 
-/* HEADER */
-
-header {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-header h1 {
-    font-family: Arial, sans-serif;
-    font-size: 3rem;
-    margin-bottom: 10px;
-    color: #555;
-}
-
-header p {
-    color: #666;
-    font-size: 1.2rem;
-}
-
 /* PROFILE CARD */
 
 .profile-card {
     width: 80%;
     max-width: 600px;
-    margin: 40px auto;
+    margin: 40px auto 30px auto;
     padding: 35px;
     background: white;
     border-radius: 8px;
@@ -54,14 +35,13 @@ header p {
     font-family: Arial, sans-serif;
     color: #555;
     margin-top: 25px;
+    font-size: 1.7rem;
 }
 
 .profile-card p {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.6;
 }
-
-/* BUTTON */
 
 .btn {
     display: inline-block;
@@ -80,31 +60,57 @@ header p {
     background: #f0f0f0;
 }
 
-/* TECH STACK */
+/* MAIN LAYOUT */
 
-.tech-stack {
+.main-layout {
     width: 80%;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    padding: 25px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}
+
+/* CARDS */
+
+.tech-stack,
+.experience,
+.contact,
+.projects {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 30px 0;
+    padding: 24px 28px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.tech-stack h2 {
+.tech-stack h2,
+.experience h2,
+.contact h2,
+.projects h2 {
     font-family: Arial, sans-serif;
     color: #555;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: left;
+    font-size: 1.25rem;
+    margin-bottom: 22px;
 }
+
+/* TECH STACK */
 
 .skills {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
 }
 
 .skills span {
@@ -114,84 +120,6 @@ header p {
     border-radius: 20px;
     font-size: 12px;
     font-weight: bold;
-}
-
-/* CONTACT AND PROJECTS */
-
-.contact,
-.projects {
-    background: white;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.contact-item {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 0;
-}
-
-.contact-item a {
-    text-decoration: none;
-    color: #000;
-}
-
-.contact-item a:hover {
-    color: #0077b5;
-}
-
-.projects h2 {
-    margin-top: 0;
-}
-
-.contact-item span {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 600;
-}
-
-.contact-item i {
-    font-size: 20px;
-    width: 25px;
-}
-
-.fa-linkedin {
-    color: #0077b5;
-}
-
-.fa-github {
-    color: #333;
-}
-
-.fa-envelope {
-    color: #d44638;
-}
-
-.project h3 {
-    margin-bottom: 10px;
-}
-
-/* EXPERIENCE */
-
-.experience {
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto 30px auto;
-    padding: 25px 30px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.experience h2 {
-    font-family: Arial, sans-serif;
-    color: #555;
-    font-size: 1.2rem;
-    margin-bottom: 25px;
 }
 
 /* TIMELINE */
@@ -214,36 +142,116 @@ header p {
 .timeline-item {
     position: relative;
     padding-left: 35px;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
 }
 
 .timeline-dot {
     position: absolute;
     left: -1px;
     top: 5px;
-
-    width: 12px;
-    height: 12px;
-
+    width: 11px;
+    height: 11px;
     background: #e6e6e6;
     border-radius: 50%;
 }
 
 .timeline-content .date {
     color: #444;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .timeline-content h3 {
-    margin-top: 6px;
-    margin-bottom: 4px;
+    margin-top: 5px;
+    margin-bottom: 3px;
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
     color: #000;
 }
 
 .timeline-content p {
     margin: 0;
     color: #444;
-    font-size: 15px;
+    font-size: 13px;
+}
+
+/* CONTACT */
+
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    font-size: 13px;
+}
+
+.contact-item span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.contact-item a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contact-item a:hover {
+    color: #0077b5;
+}
+
+.contact-item i {
+    font-size: 18px;
+    width: 22px;
+}
+
+.fa-linkedin {
+    color: #0077b5;
+}
+
+.fa-github {
+    color: #333;
+}
+
+.fa-envelope {
+    color: #d44638;
+}
+
+/* PROJECTS */
+
+.project {
+    margin-bottom: 22px;
+}
+
+.project:last-child {
+    margin-bottom: 0;
+}
+
+.project h3 {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.project p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #444;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .main-layout {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .profile-card {
+        width: 90%;
+    }
 }
