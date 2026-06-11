@@ -63,7 +63,7 @@ body {
 /* MAIN LAYOUT */
 
 .main-layout {
-    width: 80%;
+    width: 100%;
     max-width: none;
     margin: 0;
     display: flex;
