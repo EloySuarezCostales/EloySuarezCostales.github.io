@@ -255,6 +255,10 @@ body {
 }
 
 
+.right-column .profile-card {
+    margin-bottom: 30px !important;
+}
+
 .right-column .projects {
-    margin-top: 30px;
+    margin-top: 30px !important;
 }
