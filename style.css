@@ -7,7 +7,7 @@
 body {
     background: #f2f2f2;
     font-family: monospace;
-    padding: 5px;
+    padding: 15px;
 }
 
 /* PROFILE CARD */
@@ -67,6 +67,7 @@ body {
     display: flex;
     gap: 25px;
     align-items: flex-start;
+    margin-top:30px;
 }
 
 .left-column {
