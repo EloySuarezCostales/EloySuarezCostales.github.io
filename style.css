@@ -13,8 +13,8 @@ body {
 /* PROFILE CARD */
 
 .profile-card {
-    width: 80%;
-    max-width: 600px;
+    width: 100%;
+    max-width: 1400px;
     margin: 40px auto 30px auto;
     padding: 35px;
     background: white;
@@ -64,8 +64,8 @@ body {
 
 .main-layout {
     width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: none;
+    margin: 0;
     display: flex;
     gap: 25px;
     align-items: flex-start;
@@ -76,7 +76,7 @@ body {
 }
 
 .right-column {
-    flex: 1;
+    flex: 3;
 }
 
 /* CARDS */
