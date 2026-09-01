@@ -294,3 +294,44 @@ body {
     font-size: 11px;
     font-weight: bold;
 }
+.tech-stack,
+.experience,
+.contact,
+.projects,
+.research {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 30px 0;
+    padding: 24px 28px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.tech-stack h2,
+.experience h2,
+.contact h2,
+.projects h2,
+.research h2 {
+    font-family: Arial, sans-serif;
+    color: #555;
+    font-size: 1.25rem;
+    margin-bottom: 22px;
+}
+.research-institution {
+    margin-top: 2px !important;
+    color: #444;
+    font-size: 13px;
+}
+
+.research-project {
+    margin-top: 10px !important;
+    color: #000 !important;
+    font-size: 13px !important;
+}
+
+.research-description {
+    margin-top: 6px !important;
+    line-height: 1.5;
+    color: #444 !important;
+    font-size: 13px !important;
+}
